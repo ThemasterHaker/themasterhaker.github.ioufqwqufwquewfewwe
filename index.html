@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Search Engine</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        #search-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        #search-box {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background-color: #222;
+            color: #fff;
+            outline: none;
+        }
+        #search-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background-color: #222;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #search-button:hover {
+            background-color: #444;
+        }
+        #results-container {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        .result {
+            margin-bottom: 10px;
+        }
+        .result a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Retro Search Engine</h1>
+    <div id="search-container">
+        <input type="text" id="search-box" placeholder="Enter your search query...">
+        <button id="search-button">Search</button>
+    </div>
+    <div id="results-container"></div>
+
+    <script src="links.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
